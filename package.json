@@ -1,0 +1,13 @@
+{
+  "name": "cuentitas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "start": "node index"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
