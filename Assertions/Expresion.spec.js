@@ -38,6 +38,16 @@ describe("Expresion", () => {
       Expresion.desde("-3000").equivale(Expresion.desde("- 2000 - 1000"))
     )
   })
+  it("debe ser equivalente a la multiplicacion simple", () => {
+    assertTrue(
+      Expresion.desde("2").equivale(Expresion.desde("1 * 2"))
+    )
+  })
+  it("debe ser equivalente a la division simple", () => {
+    assertTrue(
+      Expresion.desde("2").equivale(Expresion.desde("2 / 1"))
+    )
+  })
 })
 describe("Expresion", () => {
   it("debe equivaler a restando", () => {

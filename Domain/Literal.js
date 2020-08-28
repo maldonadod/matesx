@@ -13,6 +13,12 @@ class Literal {
   subtract(otroLiteral) {
     return new Literal(this.numero - otroLiteral.numero)
   }
+  multiply(otroLiteral) {
+    return new Literal(this.numero * otroLiteral.numero)
+  }
+  divide(otroLiteral) {
+    return new Literal(this.numero / otroLiteral.numero)
+  }
 }
 
 module.exports = Literal;
