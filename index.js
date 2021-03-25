@@ -1,24 +1,26 @@
-const Pedido = require("./Domain/Pedido");
+const Expresion = require("./Domain/Expresion");
 
-const turno = {
-  fallo(expresionEnJuego, expresionJugada) {
-    console.log(`Error ! ${expresionEnJuego} no equivale a ${expresionJugada}`)
-  },
-  acierto(expresionEnJuego, expresionJugada) {
-    console.log(`Bien ! ${expresionEnJuego} equivale a ${expresionJugada}`)
-  }
-}
+module.exports = Expresion;
 
-const pedido = new Pedido("3000", turno)
+// const turno = {
+//   fallo(expresionEnJuego, expresionJugada) {
+//     console.log(`Error ! ${expresionEnJuego} no equivale a ${expresionJugada}`)
+//   },
+//   acierto(expresionEnJuego, expresionJugada) {
+//     console.log(`Bien ! ${expresionEnJuego} equivale a ${expresionJugada}`)
+//   }
+// }
 
-const ui = {
-  empezar(vm) {
-    console.log(vm.title)
-    process.stdin.on("data", (input) => {
-      input = input.toString().replace("\n", "")
-      pedido.jugar(input);
-    })
-  }
-}
+// const pedido = new Pedido("3000", turno)
 
-pedido.mostrar(ui);
+// const ui = {
+//   empezar(vm) {
+//     console.log(vm.title)
+//     process.stdin.on("data", (input) => {
+//       input = input.toString().replace("\n", "")
+//       pedido.jugar(input);
+//     })
+//   }
+// }
+
+// pedido.mostrar(ui);
